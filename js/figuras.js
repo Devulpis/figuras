@@ -73,7 +73,6 @@ function generar_figuras() {
 					ui.draggable.toggleClass('invisible');
 
 					$(this).toggleClass(clases_vacia[1])
-						.toggleClass('agarrado')
 						.addClass(clases_llena[1]);
 
 					verificar_victoria();
