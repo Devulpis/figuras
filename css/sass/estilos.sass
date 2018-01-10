@@ -1,0 +1,46 @@
+@import variables
+@import mixins
+@import classes
+@import queries
+@import fonts
+
+body 
+	margin: 0
+	font-family: openSans-Regular
+
+header
+	height: 70px
+	background-color: $color_primario
+	display: flex
+	justify-content: space-around
+	align-items: center
+
+	.titulo
+		margin-left: 10px
+		font-family: anton-regular
+		color: $color_rotulos
+
+	.menu-principal
+		.btn
+			font-family: openSans-Regular
+			font-weight: 900
+			color: $color_secundario
+			background-color: $color_terciario
+			border: 3px solid $color_terciario
+			+border-radius(10px)
+
+h3
+	text-align: center
+	background-color: $color_fondos
+	margin-top: 0
+
+#contenedor_juego
+	display: flex
+	justify-content: space-around
+
+	#contenedor_vacias,#contenedor_llenas
+		display: flex
+		flex-direction: column
+
+
+	

@@ -1,0 +1,152 @@
+/* Coolors Exported Palette - https://coolors.co/161925-23395b-406e8e-8ea8c3-cbf7ed */
+.rojo {
+  color: red; }
+
+.azul {
+  color: blue; }
+
+.verde {
+  color: green; }
+
+.amarillo {
+  color: yellow; }
+
+.gris {
+  color: gray; }
+
+.naranja {
+  color: orange; }
+
+.invisible {
+  display: none; }
+
+.figura {
+  -webkit-transition: font-size 0.2s;
+  -moz-transition: font-size 0.2s;
+  -o-transition: font-size 0.2s;
+  transition: font-size 0.2s; }
+
+.extra-grande {
+  font-size: 6em; }
+
+.agarrado {
+  font-size: 9em; }
+
+.dialogo {
+  display: none; }
+
+.contenido-dialogo {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.ui-dialog-titlebar {
+  background-color: #406e8e;
+  color: #161925; }
+
+.ui-button {
+  background-color: #8ea8c3 !important;
+  color: #161925; }
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 4em; }
+
+  .form form {
+    justify-content: space-around; } }
+@media only screen and (max-width: 600px) {
+  header {
+    height: 325px !important; }
+
+  h1 {
+    font-size: 3em; }
+
+  .hide-on-responsive {
+    display: none !important; }
+
+  .form form {
+    justify-content: space-around; }
+
+  .contenedor-dia {
+    margin-top: 30px; } }
+@media only screen and (max-width: 500px) {
+  header {
+    height: 275px !important; }
+
+  h1 {
+    font-size: 3em; }
+
+  .form form {
+    justify-content: space-around; }
+
+  .contenedor-dia {
+    width: 80% !important;
+    margin-top: 30px; }
+
+  .busqueda {
+    width: 60%; }
+
+  .submit {
+    width: 30%; } }
+@media only screen and (max-width: 450px) {
+  header {
+    height: 50px !important; }
+
+  h1 {
+    font-size: 1.3em;
+    padding: 15px 0 15px 0 !important;
+    border: none !important; }
+
+  .busqueda {
+    width: 60%; }
+
+  .submit {
+    width: 30%; }
+
+  .contenedor-dia {
+    width: 80% !important;
+    margin-top: 30px; } }
+@font-face {
+  font-family: anton-regular;
+  src: url(../fonts/Anton-Regular.ttf); }
+@font-face {
+  font-family: openSans-Regular;
+  src: url(../fonts/OpenSans-Regular.ttf); }
+body {
+  margin: 0;
+  font-family: openSans-Regular; }
+
+header {
+  height: 70px;
+  background-color: #406e8e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  header .titulo {
+    margin-left: 10px;
+    font-family: anton-regular;
+    color: #161925; }
+  header .menu-principal .btn {
+    font-family: openSans-Regular;
+    font-weight: 900;
+    color: #23395b;
+    background-color: #cbf7ed;
+    border: 3px solid #cbf7ed;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; }
+
+h3 {
+  text-align: center;
+  background-color: #8ea8c3;
+  margin-top: 0; }
+
+#contenedor_juego {
+  display: flex;
+  justify-content: space-around; }
+  #contenedor_juego #contenedor_vacias, #contenedor_juego #contenedor_llenas {
+    display: flex;
+    flex-direction: column; }
+
+/*# sourceMappingURL=estilos.css.map */
