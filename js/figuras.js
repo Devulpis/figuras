@@ -1,4 +1,4 @@
-llenas = ['cuadrado fa-square fa', 'circulo fa-circle fa', 'usuario fa-user fa', 'estrella fa-star fa'];
+﻿llenas = ['cuadrado fa-square fa', 'circulo fa-circle fa', 'usuario fa-user fa', 'estrella fa-star fa'];
 vacias = ['cuadrado fa-square-o fa', 'circulo fa-circle-thin fa', 'usuario fa-user-o fa', 'estrella fa-star-o fa'];
 
 $(document).ready(function(){
@@ -67,6 +67,7 @@ function generar_figuras() {
 			$figura_vacia = $('<i class="' + vacias[indice_vacias] + ' figura ' + colores[indice_colores] + ' extra-grande" aria-hidden="true"></i>');
 		
 		$figura_llena.draggable({
+			revert: true,
 			start: function () {
 				$(this).toggleClass('agarrado');
 			},
