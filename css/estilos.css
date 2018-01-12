@@ -1,4 +1,64 @@
 /* Coolors Exported Palette - https://coolors.co/161925-23395b-406e8e-8ea8c3-cbf7ed */
+@keyframes rotacion {
+  0% {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform-origin: top center;
+    -webkit-transform-origin: top center;
+    -ms-transform-origin: top center;
+    -o-transform-origin: top center; }
+  50% {
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -moz-transform-origin: top center;
+    -webkit-transform-origin: top center;
+    -ms-transform-origin: top center;
+    -o-transform-origin: top center; }
+  75% {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform-origin: top center;
+    -webkit-transform-origin: top center;
+    -ms-transform-origin: top center;
+    -o-transform-origin: top center; }
+  100% {
+    display: none; } }
+@-webkit-keyframes rotacion {
+  0% {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform-origin: top center;
+    -webkit-transform-origin: top center;
+    -ms-transform-origin: top center;
+    -o-transform-origin: top center; }
+  50% {
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -moz-transform-origin: top center;
+    -webkit-transform-origin: top center;
+    -ms-transform-origin: top center;
+    -o-transform-origin: top center; }
+  75% {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform-origin: top center;
+    -webkit-transform-origin: top center;
+    -ms-transform-origin: top center;
+    -o-transform-origin: top center; }
+  100% {
+    display: none; } }
 .rojo {
   color: red; }
 
@@ -25,6 +85,12 @@
   -moz-transition: font-size 0.2s;
   -o-transition: font-size 0.2s;
   transition: font-size 0.2s; }
+
+.figura-correcta {
+  -webkit-animation-name: rotacion;
+  -webkit-animation-duration: 0.8s;
+  animation-name: rotacion;
+  animation-duration: 0.8s; }
 
 .extra-grande {
   font-size: 6em; }

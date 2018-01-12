@@ -7,6 +7,10 @@ $(document).ready(function(){
 	$('#btn_nueva_partida').on('click', nueva_partida);
 });
 
+function reproducir_audio(id) {
+	document.getElementById(id).play();
+}
+
 function nueva_partida() {
 	//Vaciamos los contenedores de las figuras.
 	$('#contenedor_llenas').html('');
@@ -14,6 +18,14 @@ function nueva_partida() {
 
 	//Volvemos a generar las figuras
 	generar_figuras();
+}
+
+function figura_correcta(vacia, llena, clases_vacia, clases_llena) {
+	llena.toggleClass('invisible');
+
+	vacia.toggleClass(clases_vacia[1])
+		.toggleClass('figura-correcta')
+		.addClass(clases_llena[1]);
 }
 
 function verificar_victoria() {
@@ -55,7 +67,6 @@ function generar_figuras() {
 			$figura_vacia = $('<i class="' + vacias[indice_vacias] + ' figura ' + colores[indice_colores] + ' extra-grande" aria-hidden="true"></i>');
 		
 		$figura_llena.draggable({
-			revert: true,
 			start: function () {
 				$(this).toggleClass('agarrado');
 			},
@@ -70,11 +81,8 @@ function generar_figuras() {
 					clases_llena = ui.draggable.attr('class').split(' ');
 
 				if (clases_vacia[0] === clases_llena[0]) {
-					ui.draggable.toggleClass('invisible');
-
-					$(this).toggleClass(clases_vacia[1])
-						.addClass(clases_llena[1]);
-
+					figura_correcta($(this), ui.draggable, clases_vacia, clases_llena);
+					reproducir_audio('audio_bell');
 					verificar_victoria();
 				}
 			}

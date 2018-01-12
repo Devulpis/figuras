@@ -4,14 +4,23 @@
 	-ms-border-radius: $radius
 	border-radius: $radius
 
-=rotate($q)
-	-moz-transform: rotate($q)
-	-webkit-transform: rotate($q)
-	-ms-transform: rotate($q)
-	-o-transform: rotate($q)
+=rotate($grados, $centro)
+	-moz-transform: rotate($grados)
+	-webkit-transform: rotate($grados)
+	-ms-transform: rotate($grados)
+	-o-transform: rotate($grados)
+	-moz-transform-origin: $centro
+	-webkit-transform-origin: $centro
+	-ms-transform-origin: $centro
+	-o-transform-origin: $centro
 	
 =transition($transition, $duration)
 	-webkit-transition: $transition $duration
 	-moz-transition: $transition $duration
 	-o-transition: $transition $duration
 	transition: $transition $duration
+=animation($nombre, $duracion)
+	-webkit-animation-name: $nombre
+	-webkit-animation-duration: $duracion
+	animation-name: $nombre
+	animation-duration: $duracion
